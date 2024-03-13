@@ -1,0 +1,174 @@
+@charset "utf-8";
+/*Criando regras usando o fluxo de trabalho do MOBILE FIRST - 320px
+
+OBS: As regras aqui criadas também servirão para o site como um todo, ou seja, independente do tamanho da minha tela.*/
+
+body {
+
+    font-family: sans-serif;
+    /* background-image: url(/assets/Rectangle\ 119.jpg);  */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 img {
+    width: 60%;
+
+}
+
+#topo {
+    text-align: center;
+}
+
+#IconMenu {
+    text-align: start;
+    color: #FF9900;
+    cursor: pointer;
+    min-height: 40px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 50px;
+    background-color: black;
+}
+
+#navheader {
+    min-height: 40px;
+    text-transform: uppercase;
+    display: none;
+
+
+}
+
+#navheader a,
+#navheader a:link,
+#navheader a:visited,
+#IconMenu a:link,
+#IconMenu a:visited {
+    display: flex;
+    text-decoration: none;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: #FF9900;
+    color: black;
+    border: black solid 1px;
+
+}
+
+#navheader a:hover,
+#IconMenu a:hover {
+    background-color: black;
+    color: #FF9900;
+}
+
+.rodape {
+    background-color: #1F2124;
+    text-align: center;
+}
+
+.ajuda {
+    margin: 0;
+    color: white;
+}
+
+.menu-rodape ul {
+    list-style: none;
+    margin: 17px auto;
+    padding: 0;
+}
+
+.menu-rodape li {
+    padding: 1px;
+    text-transform: uppercase;
+    width: 100%;
+
+
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 7px;
+
+}
+
+.forma {
+    margin-top: 55px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.conteudo-pagamento {
+    padding: 10px;
+}
+
+.logo-rodape {
+    margin: 33px;
+}
+
+.assinatura {
+    font-family: "Alata", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.titulos h2{
+    font-family: "Alata", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black; 
+    font-size: 30px;
+
+}
+.titulos{
+    text-align: center;
+}
+
+#nav-main{
+    text-align: center;
+    margin-bottom: 21px;
+}
+#nav-main a{
+    display: inline-block;
+    border: 1px solid #FF9900;
+    text-decoration: none;
+    padding: 7px 29px;
+    margin-right: -5px;
+    margin-left: 11px;
+    border-radius: 10px;
+    background-color: #FF9900;
+    color: black;
+}
+
+.card{
+
+}
+
+figure{
+    margin: 1%;
+    padding-left: 3%; 
+    display: inline-grid;  
+}
+
+figure img{
+    height: 300px;
+    width: 200px;
+}
+
+.paragrafo{
+    font-size: large; 
+    width: 216px;
+    font-family: "Alata", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black; 
+}

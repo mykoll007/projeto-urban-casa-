@@ -6,11 +6,11 @@ OBS: As regras aqui criadas também servirão para o site como um todo, ou seja,
 body {
 
     font-family: sans-serif;
-    /* background-image: url(/assets/Rectangle\ 119.jpg);  */
+    background-image: url(/assets/MicrosoftTeams-image.png);
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 img {
@@ -64,13 +64,28 @@ h1 img {
 
 #navheader a:hover,
 #IconMenu a:hover {
-    background-color: black;
+    background-color: white;
     color: #FF9900;
+}
+
+
+.carrossel{
+    overflow: hidden;
+}
+.container-carrossel{
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(0);
+}
+.container-carrossel img{
+    object-fit: cover;
+    width: 90%;
 }
 
 .rodape {
     background-color: #1F2124;
     text-align: center;
+    box-shadow: 0 0 18px white;
 }
 
 .ajuda {
@@ -121,23 +136,25 @@ h1 img {
     color: white;
 }
 
-.titulos h2{
+.titulos h2 {
     font-family: "Alata", sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: black; 
+    color: white;
     font-size: 30px;
 
 }
-.titulos{
+
+.titulos {
     text-align: center;
 }
 
-#nav-main{
+#nav-main {
     text-align: center;
     margin-bottom: 21px;
 }
-#nav-main a{
+
+#nav-main a {
     display: inline-block;
     border: 1px solid #FF9900;
     text-decoration: none;
@@ -149,26 +166,329 @@ h1 img {
     color: black;
 }
 
-.card{
-
-}
-
-figure{
+figure {
     margin: 1%;
-    padding-left: 3%; 
-    display: inline-grid;  
+    padding-left: 3%;
+    display: inline-grid;
+    margin-left: 49px;
+    border: 2px solid #FF9900;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px white;
+
 }
 
-figure img{
+figure:hover {
+    border: 2px solid white;
+    transition: border;
+}
+
+figure img {
     height: 300px;
     width: 200px;
+    border-radius: 28px;
+    padding-top: 10px;
 }
 
-.paragrafo{
-    font-size: large; 
+.paragrafo {
+    font-size: large;
     width: 216px;
     font-family: "Alata", sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: black; 
+    color: white;
+}
+
+#camiseta-melted p {
+
+    height: 52px;
+
+}
+
+#container-ofertas {
+    background-color: #FF9900;
+    text-align: center;
+    margin-top: 4px;
+    padding-top: 51px;
+}
+
+#emoji_people {
+    width: 44px;
+    font-size: 89px;
+}
+
+#emoji_people1 {
+    width: 100px;
+    font-size: 108px;
+}
+
+#paragrafo-ofertas p {
+    padding: 0 3%;
+}
+
+#input-ofertas {
+    display: inline-block;
+}
+
+#cadastro-ofertas {
+    display: grid;
+}
+
+#cadastro-ofertas input {
+    height: 41px;
+    margin: 10px 38px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#button button {
+    width: 135px;
+    margin: 9px;
+    height: 41px;
+    border: 1px solid;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#button button:hover {
+    background-color: white;
+    color: black;
+}
+#hr{
+    margin-top: 10px;
+}
+#coleções {
+    display: flex;
+    justify-content: center;
+    font-family: "Alata", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: medium;
+    margin: 34px;
+}
+
+#coleções p {
+    padding: 7px;
+}
+
+#container-coleção img {
+    margin: 12px 0;
+}
+
+.assinatura {
+    margin-bottom: 0;
+}
+aside img{
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0px 0px 20px white;
+}
+
+
+@media screen and (min-width:600px) {
+    #coleções{justify-content: space-evenly;
+        font-size: 33px
+    }
+
+    #container-coleção img{
+        width: 300px;
+       
+    }
+    #container-adidas{
+        position: absolute;
+    }
+    #container-nike{
+        position: relative;
+        left: 310px;
+        width: 283px;
+    }
+
+    #container-puma{
+        position: relative;
+        left:310px;
+        width: 283px;
+
+    }
+    h1 img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:700px) {
+        .container-contcoleção{
+            display: flex;
+    
+            justify-content: center;
+            margin-right: 292px;
+        }
+
+        .rodape{
+            text-align: left;
+        }
+
+        .rodape-conteudo{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-rodape{
+            margin-top: 1px;
+        }
+        .menu-rodape li {
+            text-transform: none;
+            
+            
+        }
+        .ajuda{
+            display: none;
+        }
+        .menu-rodape a{
+            padding: 5px;
+            margin-left: 1px;
+           
+        }
+        .rodape-pagamento{
+            margin-left: 82px;
+            margin-top: 34px;
+            width: 420px;
+        }
+
+        .rodape-pagamento img{
+            padding: 8px;
+        }
+
+        .forma {
+            margin-top: 17px;
+            margin-bottom: 0px;
+            margin-left: 25px;
+            color: white;
+        }
+        .logo-rodape{
+            margin-top: 86px;
+        }
+ 
+        .redes{
+            display: flex;
+        }
+        .redes img{
+            margin-top: 6px;
+            width: 38px;
+            padding: 0 14px;
+        }
+        h1 img{
+            width: 220px;
+        }
+        #IconMenu{
+            display: none;
+        }
+        #navheader{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-right: 129px;
+            margin-left: 125px;
+            padding-top: 15px;
+        }
+        #navheader a{
+            border-radius: 10px;
+            text-transform: none;
+            width: 100px;
+        }
+        #topo{
+            background-color: black;
+            padding-bottom: 10px;
+        }
+        #topo h1{
+            margin: 0;
+            padding-top: 15px;
+        }
+        aside img{
+            margin-top: 15px;
+        }
+        main hr{
+            margin-top: 0;
+        }
+}
+
+@media screen and (min-width:1000px) {
+
+    aside img{
+        width: 70%;
+    }
+    aside{
+        margin-left: 150px;
+    }
+    #navheader{
+        margin-right: 198px;
+    margin-left: 156px;
+    }
+    main hr{
+        margin-top: 0;
+    }
+    #hr{
+        margin-top: 10px;
+    }
+    #topo{
+        padding-bottom: 10px;
+    }
+    .container-contofertas{
+        display: flex;
+        justify-content: center;
+    }
+    #container-ofertas{
+        width: 800px;
+    }
+    #container-coleção img {
+        width: 375px;
+    }
+    #container-nike {
+        left: 390px;
+        width: 100%;
+    }
+    #container-puma {
+        left: 390px;
+        width: 100%;
+    }
+    .logo-rodape img{
+        width: 180px;
+    }
+    .redes img{
+        width: 38px
+    }
+    .logo-rodape{
+        margin-top: 102px;
+   
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #container-ofertas{
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    figure{
+        padding-left: 1%;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+    .container-contcoleção{
+        margin-right: 532px;
+        margin-bottom: 30px;
+    }
+    #container-coleção img{
+        width: 500px;
+    }
+    #container-nike {
+        left: 676px;
+    }
+    #container-puma{
+        left: 676px;
+    }
+
 }

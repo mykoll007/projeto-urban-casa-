@@ -74,6 +74,7 @@ h1 img {
 }
 .container-carrossel{
   display: flex;
+  
   transition: transform 0.8s ease-in-out;
   transform: translateX(0);
 }
@@ -201,7 +202,7 @@ figure img {
 
 #camiseta-melted p {
 
-    height: 52px;
+    height: 67px;
 
 }
 
@@ -490,5 +491,8 @@ aside img{
     #container-puma{
         left: 676px;
     }
-
+    #card-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

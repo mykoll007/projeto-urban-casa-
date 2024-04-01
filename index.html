@@ -34,7 +34,7 @@
       <nav id="navheader">
         <a href="/masculino.html" tabindex="1">Masculino</a>
         <a href="/feminino.html" tabindex="2">Feminino</a>
-        <a href="#" tabindex="3">Login</a>
+        <a href="#" tabindex="3" onclick="openModal()">Login</a>
       </nav>
 
 
@@ -60,7 +60,7 @@
     </nav>
     <div class="card">
       <figure>
-        <img src="/assets/blusaonikefem.png" alt="" />
+        <a href="produto.html"><img src="/assets/blusaonikefem.png" alt="" /></a>
         <span class="paragrafo">
           <p>Blusão Nike Sportswear Club Fleece Feminino</p>
         </span>
@@ -71,7 +71,7 @@
        
       </figure>
       <figure>
-        <img src="/assets/camisetanike.png" alt="" />
+        <a href="/produto.html"><img src="/assets/camisetanike.png" alt=""/></a>
         <span class="paragrafo">
           <p>Camiseta NikeCourt Heritage Masculina</p>
         </span>
@@ -81,7 +81,7 @@
         </span>
       </figure>
       <figure>
-        <img src="/assets/jaquetanike.png" alt="" />
+        <a href="produto.html"><img src="/assets/jaquetanike.png" alt="" /></a>
         <span class="paragrafo">
           <p>Jaqueta Nike Repel Miler Masculina</p>
         </span>
@@ -91,7 +91,7 @@
         </span>
       </figure>
       <figure>
-        <img src="/assets/blusaonikemasc.png" alt="" />
+        <a href="produto.html"><img src="/assets/blusaonikemasc.png" alt="" /></a>
         <span class="paragrafo">
           <p>Blusão Nike Sportswear Club Fleece Masculino</p>
         </span>
@@ -104,6 +104,11 @@
     <div class="titulos">
       <h2>Tempo Limitado</h2>
     </div>
+    <body>
+      <div class="container-cronometro">
+        <span class="material-symbols-outlined" id="timer">timer</span>
+        <div class="timer">24:59:59</div>
+      </div>
     <div class="card">
       <figure>
         <img src="/assets/blusaosports.png" alt="" />
@@ -237,6 +242,32 @@
       <p>© 2023 Urban Styles c.O . Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-logo"><img src="/assets/Logo.png"></div>
+      <h2 style="text-align: center;font-family: 'Alata', sans-serif; font-weight: 500; font-style: normal; color: white;">Fazer Login</h2>
+      <form id="form-modal">
+        
+        <input type="text"  id="username" name="username" tabindex="3" placeholder= " Login">
+        
+        <input type="password" id="password" name="password" tabindex="4" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <a href="#" style="text-decoration: none;     text-align: center;
+      font-family: 'Alata', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: white;"><p>Registre-se</p></a>
+      <a href="#" style="text-decoration: none;     text-align: center;
+      font-family: 'Alata', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: white;"><p>Esqueceu a senha?</p></a>
+
+    </div>
+  </div>
 
   <script src="/js/interaçoes.js"></script>
   <script src="js/script.js"></script>

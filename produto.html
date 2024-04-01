@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/produto.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="produto-container">
+            <div class="produto-imagem">
+                <img src="/assets/produto principal.png" alt="Imagem 1">
+            </div>
+            <div class="produto-imagem">
+                <img src="/assets/produto 3.png" alt="Imagem 2">
+            </div>
+            <div class="produto-info">
+                <h3>Jaqueta New Balance Accelerate</h3>
+                <p class="preco">R$229,99</p>
+                <p class="descricao">100% Poliéster.</p>
+
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <form action="/finalizada-conta.html" method="GET">
+                    <label for="tamanho">Selecione o tamanho:</label>
+                    <select name="tamanho" id="tamanho">
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XL">XL</option>
+
+                    </select>
+                    <button type="submit">Adicionar ao Carrinho</button>
+                </form>
+            </div>
+        </div>
+        <h2>Itens que você pode gostar</h2>
+        <div class="produtos-recomendados">
+            <div class="carrossel">
+                <div class="produto">
+                    <img src="/assets/recomendado 1.png" alt="Produto 1">
+                    <p>Jaqueta Nike Sportwear Just do it Masculina</p>
+                    <p class="preco">R$179,99</p>
+                </div>
+                <div class="produto">
+                    <img src="/assets/recomendado 2.png" alt="Produto 2">
+                    <p>Moletom Nike Sportswear Mod Crop Roxo</p>
+                    <p class="preco">R$129,99</p>
+                </div>
+                <div class="produto">
+                    <img src="/assets/recomendado 3.png" alt="Produto 3">
+                    <p>Camiseta Nike Sportswear Masculina HO23</p>
+                    <p class="preco">R$79,99</p>
+                </div>
+                <div class="produto">
+                    <img src="/assets/recomendado 4.png" alt="Produto 4">
+                    <p>Nike Sportswear zip Fleece Feminino</p>
+                    <p class="preco">R$99,99</p>
+                </div>
+                <div class="produto">
+                    <img src="/assets/recomendado 5.png" alt="Produto 5">
+                    <p>Camiseta Adidas IB7416 3 stripies</p>
+                    <p class="preco">R$100,99</p>
+                </div>
+                <div class="produto">
+                    <img src="/assets/recomendado 6.png" alt="Produto 6">
+                    <p>Moletom com capuz Nike Sportswear</p>
+                    <p class="preco">R$189,99</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171718;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    opacity: 0;
+    /* Opacidade inicial definida aqui */
+    animation: fadeIn 1s forwards;
+    /* Animação aplicada inicialmente */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.numero-pedido {
+    color: green;
+}
+
+.texto-colorido {
+    color: #FF9900;
+}
+
+.barra-progresso {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.etapa-de-progresso {
+
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #777;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: calc(20% - 10px);
+    margin-right: 10px;
+}
+
+.completo {
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+    background-color: #0051ff;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: calc(20% - 10px);
+    margin-right: 10px;
+}
+
+.etapa-de-progresso:last-child {
+    margin-right: 0;
+}
+
+.etapa-de-progresso img,
+.completo img {
+    max-width: 100px;
+    max-height: 100px;
+    /* Defina uma altura máxima para as imagens */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.etapa-de-progresso:hover img,
+.completo:hover img {
+    transform: scale(1.1);
+}
+
+.botao-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 30px 100px;
+    background-color: #FF9900;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    margin: -4px -4px;
+    border-bottom: 2px solid white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container,
+    .etapa-de-progresso,
+    .completo {
+        animation: none;
+        opacity: 1;
+    }
+
+
+    .etapa-de-progresso img,
+    .completo img {
+        max-width: 80px;
+
+        max-height: 80px;
+
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    .barra-progresso {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .etapa-de-progresso,
+    .completo {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .etapa-de-progresso img,
+    .completo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .etapa-de-progresso p,
+    .completo p {
+        font-size: 0.8em;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+    #logo img{
+        margin-left: 3px;
+    }
+
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+#logo img{
+    width: 80%;
+    max-width: 300px;
+}

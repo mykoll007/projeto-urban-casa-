@@ -1,0 +1,189 @@
+/* Resetando margens e paddings */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: auto;
+
+  
+}
+
+
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 27px;
+}
+
+
+header img{
+  max-width: 300px;
+  width: 70%;
+}
+
+hr{
+ margin: 0;
+}
+#carrinho-text p{
+  text-align: center;
+  font-size: 30px;
+  margin: 32px auto;
+  color: white;
+}
+main{
+  background-color: #171718;
+}
+.delivery{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F2124;
+    padding: 11px;
+}
+.delivery p{
+  padding-top: 14px;
+  margin: 0;
+  font-size: large;
+  color: white;
+}
+.delivery img{
+  width: 20%;
+    max-width: 42px;
+    height: 50px;
+}
+#quantidad{
+  margin: 68px;
+  margin-top: 46px;
+  margin-left: 24px;
+  margin-right: 18px;
+  height: 147px
+}
+#quantidad img{
+width: 100px;
+}
+.mae{
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.valor_unit{
+  width: 100px;
+}
+#button{
+  display: flex;
+    justify-content: center;
+    margin-top: 30px;
+ 
+}
+#button button{
+  text-transform: uppercase;
+  color: white;
+  background-color: #696969;
+  border: 1px solid #696969;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 25px;
+ 
+}
+#button a{
+  text-decoration: none;
+}
+
+.produto_carrinho {
+ 
+ 
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.produto_carrinho img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produto_carrinho h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.produto_carrinho p {
+  margin-bottom: 5px;
+}
+
+/* Estilo para o frete e endereço */
+.frete_endereco {
+  background-color:#171718;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+
+
+
+
+
+#carrinho {
+  font-family: fantasy;
+  margin: 44%;
+  font-size: xx-large;
+}
+
+/* #subtitulo {
+  margin-top: -24px;
+} */
+
+.frete_endereco label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.frete_endereco input[type="text"] {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+}
+
+.frete_endereco input[type="text"]:last-child {
+  margin-right: 0;
+}
+
+.frete_endereco hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilo para o resumo do carrinho */
+.resumo {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Estilo para os links no rodapé */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer li{
+  list-style-type: none;
+}

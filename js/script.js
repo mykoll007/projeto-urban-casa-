@@ -54,3 +54,34 @@ function openModal() {
       closeModal();
     }
   }
+  
+  $(document).ready(function() {
+      $('#buttonFrete').click(function() {
+          var cep = $('#calcularFrete').val().replace(/\D/g, ''); 
+          
+          
+          if (cep.length != 8) {
+              alert('CEP inválido. Certifique-se de digitar apenas os números.');
+              return false;
+          }
+          
+  
+          $.ajax({
+              url: 'https://viacep.com.br/ws/' + cep + '/json/',
+              dataType: 'json',
+              success: function(data) {
+                  if (!data.erro) {
+                      $('#rua').val(data.logradouro);
+                      $('#bairro').val(data.bairro);
+                      $('#est_city').val(data.localidade + '/' + data.uf);
+                  } else {
+                      alert('CEP não encontrado.');
+                  }
+              },
+              error: function() {
+                  alert('Erro ao buscar informações de endereço. Por favor, tente novamente mais tarde.');
+              }
+          });
+      });
+  });
+  

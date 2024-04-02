@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="/css/formas-de-pagamento.css">
+    <link rel="stylesheet" href="/css/estilo.css">
 </head>
+
 <body>
+    <h1 style="display: flex; justify-content: center;">
+        <img src="assets/Logo.png" alt="Logo da página" style="width: 80%; max-width: 300px;" />
+     
+    </h1>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <div id="carrinho">
+            <h3>Jaqueta New Balance Accelerate</h3>
+            <p>Preço: R$ 229,99</p>
+        </div>
+        <h1>Formas de Pagamento</h1>
+        <form id="paymentForm">
+            <label for="metodo">Escolha o método de pagamento:</label>
+            <select id="metodo" name="metodo">
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="pix">PIX</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+
+            <div id="pixCodeContainer" class="hidden">
+                <h2>Código PIX:</h2>
+               <a href="finalizada-conta.html"><img src="/assets/código pix.png" alt="Código PIX"></a>
+                <p>Para efetuar o pagamento, utilize o código PIX acima e envie o valor correspondente.</p>
+                <p>Após o pagamento, envie o comprovante para o email: exemplo@seuemail.com</p>
+            </div>
+
+            <div id="boletoImageContainer" class="hidden">
+                <h2>Boleto Bancário:</h2>
+                <a href="finalizada-conta.html"><img src="/assets/código boleto.png" alt="Boleto Bancário"></a>
+                <p>Para efetuar o pagamento, utilize o boleto bancário acima e realize o pagamento em qualquer agência
+                    bancária.</p>
+                <p>Lembre-se de verificar a data de vencimento e os dados do beneficiário.</p>
+            </div>
+
+            <a href="finalizada-conta.html"><button>Pagar</button></a>
+        </form>
+
+        
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+          <h3 class="ajuda">Ajuda</h3>
+          <div class="menu-rodape">
+            <ul>
+              <li><a href="#">Dúvidas gerais</a></li>
+              <li><a href="#">Pedidos</a></li>
+              <li><a href="#">Pagamentos</a></li>
+              <li><a href="#">Corporativo</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Sobre a Urban</a></li>
+              <li><a href="#">Cadastre-se para receber novidades</a></li>
+              <li><a href="#">Mapa do Site</a></li>
+            </ul>
+          </div>
+          <div class="rodape-pagamento">
+            <h3 class="forma">Formas de pagamento</h3>
+            <div class="conteudo-pagamento">
+              <img src="/assets/mastercard.png" alt="#" />
+              <img src="/assets/visa.png" alt="#" />
+              <img src="/assets/elo.png" alt="#" />
+              <img src="/assets/americanexpress.png" alt="#" />
+              <img src="/assets/pix.png" alt="#" />
+            </div>
+          </div>
     
+            
+          <div class="logo-rodape">
+            <a href="index.html"><img src="assets/Logo-rodape.png" /></a>
+            <div class="redes">
+              <a href="#"><img src="/assets/instagram.png" /></a>
+              <a href="#"><img src="/assets/twitter.png" /></a>
+              <a href="#"><img src="/assets/facebook.png" /></a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="assinatura">
+          <p>© 2023 Urban Styles c.O . Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+    <script src="/js/pagamento.js"></script>
+
 </body>
+
 </html>

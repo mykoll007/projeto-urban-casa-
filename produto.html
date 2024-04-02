@@ -7,10 +7,30 @@
     <title>Detalhes do Produto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/produto.css">
+    <link rel="stylesheet" href="/css/estilo.css">
 </head>
 
 <body>
-    <div class="container">
+    <header id="topo">
+        <div>
+          <span id="IconMenu" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+          </span>
+          <h1>
+              <a href="/index.html"><img src="assets/Logo.png" alt="Logo da página" /></a>
+           
+          </h1>
+          <!--Nav vai as navegações para outras páginas-->
+          <nav id="navheader">
+            <a href="/masculino.html" tabindex="1">Masculino</a>
+            <a href="/feminino.html" tabindex="2">Feminino</a>
+            <a href="#" tabindex="3" onclick="openModal()">Login</a>
+          </nav>
+    
+    
+        </div>
+      </header>
+    <div class="container-1">
         <div class="produto-container">
             <div class="produto-imagem">
                 <img src="/assets/produto principal.png" alt="Imagem 1">
@@ -30,7 +50,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <form action="/finalizada-conta.html" method="GET">
+                <form action="/carrinho.html" method="GET">
                     <label for="tamanho">Selecione o tamanho:</label>
                     <select name="tamanho" id="tamanho">
                         <option value="P">P</option>
@@ -46,7 +66,7 @@
         </div>
         <h2>Itens que você pode gostar</h2>
         <div class="produtos-recomendados">
-            <div class="carrossel">
+            <div class="carrossel-1">
                 <div class="produto">
                     <img src="/assets/recomendado 1.png" alt="Produto 1">
                     <p>Jaqueta Nike Sportwear Just do it Masculina</p>
@@ -81,6 +101,50 @@
 
         </div>
     </div>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+          <h3 class="ajuda">Ajuda</h3>
+          <div class="menu-rodape">
+            <ul>
+              <li><a href="#">Dúvidas gerais</a></li>
+              <li><a href="#">Pedidos</a></li>
+              <li><a href="#">Pagamentos</a></li>
+              <li><a href="#">Corporativo</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Sobre a Urban</a></li>
+              <li><a href="#">Cadastre-se para receber novidades</a></li>
+              <li><a href="#">Mapa do Site</a></li>
+            </ul>
+          </div>
+          <div class="rodape-pagamento">
+            <h3 class="forma">Formas de pagamento</h3>
+            <div class="conteudo-pagamento">
+              <img src="/assets/mastercard.png" alt="#" />
+              <img src="/assets/visa.png" alt="#" />
+              <img src="/assets/elo.png" alt="#" />
+              <img src="/assets/americanexpress.png" alt="#" />
+              <img src="/assets/pix.png" alt="#" />
+            </div>
+          </div>
+    
+            
+          <div class="logo-rodape">
+            <a href="index.html"><img src="assets/Logo-rodape.png" /></a>
+            <div class="redes">
+              <a href="#"><img src="/assets/instagram.png" /></a>
+              <a href="#"><img src="/assets/twitter.png" /></a>
+              <a href="#"><img src="/assets/facebook.png" /></a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="assinatura">
+          <p>© 2023 Urban Styles c.O . Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    
 </body>
 
 </html>

@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/assets/MicrosoftTeams-image.png);
+
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#carrinho {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#carrinho h3 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #FF9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#pixCodeContainer {
+  text-align: center;
+}
+
+#pixCodeContainer img {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+#boletoImageContainer {
+  text-align: center;
+}
+
+#boletoImageContainer img {
+  height: 200px;
+  width: 300px;
+
+}

@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descrição da página">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="/css/carrinho.css">
+ 
 </head>
 <body>
+  <header>
     
-</body>
+      
+        <a href="index.html"><img src="assets/Logo.png" alt="Logo da página"></a>
+     
+    
+  </header>
+
+
+  <main>
+    <hr>
+    <span id="carrinho-text"><p>CARRINHO</p></span>
+  <div class="delivery" id="subtitulo">
+      <img src="assets/Delivery.png" alt="Ícone de frete grátis">
+      <p>Frete grátis para compras acima de R$109,99</p>
+      <img src="assets/Delivery.png" alt="Ícone de frete grátis">
+  </div>
+
+
+  <div class="mae">
+    <div class="produto_carrinho" id="moletom">
+      <img src="assets/masculino 5.png" width="136" height="200" alt="Agasalho NB">
+ 
+      <h2>Moletom NEW BALANCE ESSENTIALS</h2>
+      <p> Tamanho: G</p>
+      <p> Cor: Preto</p>
+      <p> Marca: New Balance</p>
+
+  </div>
+  
+  <div id="quantidad">
+    <p>Quantidade</p>
+    <img src="/assets/Group 30.png">
+    <div class="valor_unit">
+      <p>Valor Total</p>
+      <p><i><s>R$ 339,99</s></i><p>R$229,99</p></p>
+      <p><b>R$ 229,99</b></p>
+      
+    </div>
+    
+  </div>
+  </div>
+  <div id="button"><a href="formas-de-pagamento.html"><button>Continuar</button></a></div>
+  <hr>
+ 
+  
+
+  <div class="frete_endereco">
+    <div id="calcular-Frete">
+        <p>Prazo de entrega</p>
+        <label for="calcularFrete">Digite o CEP:</label>
+        <input type="text" value="00000-000" id="calcularFrete">
+        <button id="buttonFrete">Calcular</button>
+    </div>
+    <hr>
+    <div>
+        <div id="endereco">
+            <img src="assets/Delivery.png" alt="Ícone de entrega">
+            <p>Confirme o Endereço</p>
+        </div>
+        <div>
+            <label for="rua">Rua:</label>
+            <input type="text" name="rua" id="rua" readonly>
+            <label for="number">Número:</label>
+            <input type="text" name="number" id="number" readonly>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" readonly>
+            <label for="est_city">Cidade/Estado:</label>
+            <input type="text" name="est_city" id="est_city" readonly>
+            <label for="quemRecebe">Quem Recebe:</label>
+            <input type="text" name="quemRecebe" id="quemRecebe">
+        </div>
+    </div>
+</div>
+
+
+   
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div class="menu-rodape">
+        <ul>
+          <li><a href="#">Dúvidas gerais</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Pagamentos</a></li>
+          <li><a href="#">Corporativo</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Sobre a Urban</a></li>
+          <li><a href="#">Cadastre-se para receber novidades</a></li>
+          <li><a href="#">Mapa do Site</a></li>
+        </ul>
+      </div>
+      <div class="rodape-pagamento">
+        <p>Formas de pagamento</p>
+        <img src="assets/mastercard.png" alt="#" />
+        <img src="assets/visa.png" alt="#" />
+        <img src="assets/elo.png" alt="#" />
+        <img src="assets/americanexpress.png" alt="#" />
+        <img src="assets/pix.png" alt="#" />
+        <img src="assets/boleto.png" alt="#" />
+      </div>
+
+      <div class="logo-rodape">
+        <a href="index.html"><img src="assets/Logo-rodape.png" /></a>
+      </div>
+
+      <div class="redes">
+        <a href="#"><img src="assets/instagram.png" /></a>
+        <a href="#"><img src="assets/twitter.png" /></a>
+        <a href="#"><img src="assets/facebook.png" /></a>
+      </div>
+    
+
+    <div class="assinatura">
+      <p>© 2023 Urban Styles c.O . Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+  
+  </body>
 </html>

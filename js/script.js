@@ -84,4 +84,22 @@ function openModal() {
           });
       });
   });
-  
+   // Função para verificar se o usuário já consentiu com o uso de cookies
+   function checkCookieConsent() {
+    if (!localStorage.getItem('cookieConsent')) {
+      // Mostra o modal se o consentimento ainda não foi dado
+      document.getElementById('cookie-modal').style.display = 'block';
+    }
+  }
+
+  // Função para definir o consentimento de cookies
+  function setCookieConsent() {
+    localStorage.setItem('cookieConsent', 'true');
+    document.getElementById('cookie-modal').style.display = 'none';
+  }
+
+  // Event listener para o botão de aceitar cookies
+  document.getElementById('aceitar-cookies').addEventListener('click', setCookieConsent);
+
+  // Verifica o consentimento de cookies quando a página carrega
+  window.onload = checkCookieConsent;

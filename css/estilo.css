@@ -166,15 +166,19 @@ h1 img {
     background-color: #FF9900;
     color: black;
 }
-
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
 figure {
-    margin: 1%;
-    padding-left: 3%;
-    display: inline-grid;
-    margin-left: 49px;
+    margin: 2%; 
+    padding-left: 2%;
+
     border: 2px solid #FF9900;
     border-radius: 10px;
-    margin-bottom: 15px;
+   
     box-shadow: 0 0 10px white;
 
 }
@@ -191,7 +195,7 @@ figure img {
     padding-top: 10px;
 }
 
-.paragrafo {
+.paragrafo p{
     font-size: large;
     width: 216px;
     font-family: "Alata", sans-serif;
@@ -582,4 +586,3 @@ aside img{
         flex-wrap: wrap;
     }
 }
-

@@ -17,7 +17,9 @@ header {
   padding-top: 20px;
   padding-bottom: 27px;
 }
-
+header a{
+  display: contents;
+}
 
 header img{
   max-width: 300px;

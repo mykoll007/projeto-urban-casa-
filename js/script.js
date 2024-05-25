@@ -1,18 +1,12 @@
-const imgs = document.getElementById("img-carrossel");
-const img = document.querySelectorAll("#img-carrossel img");
-
-let idx = 0;
-
-function carrossel(){
-    idx++;
-
-    if(idx > img.length - 1){
-        idx = 0;
-    }
-
-    imgs.style.transform = `translateX(${-idx * 98}%)`;
-}
-setInterval(carrossel, 1800);
+$(document).ready(function(){
+  // Inicialização/Ativação do plugin Slick
+  $('#img-carrossel').slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      dots: true,
+      arrows: false
+  });
+});   
 
 let timer;
 let secondsRemaining = 24 * 3600 + 59 * 60 + 59;
@@ -103,3 +97,13 @@ function openModal() {
 
   // Verifica o consentimento de cookies quando a página carrega
   window.onload = checkCookieConsent;
+
+  //Enviar e-mail e whatsapp promoção
+
+var btnEnviar = document.getElementById("button");
+var modalMensagem = document.getElementById("modal-mensagem")
+
+btnEnviar.addEventListener('click',function(){
+  modalMensagem.style.display = "block"
+})
+

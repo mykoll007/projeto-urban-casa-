@@ -80,7 +80,7 @@ h1 img {
 }
 .container-carrossel img{
     object-fit: cover;
-    width: 90%;
+    /* width: 90%; */
 }
 
 .rodape {
@@ -285,16 +285,18 @@ figure img {
 .assinatura {
     margin-bottom: 0;
 }
-aside img{
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0px 0px 20px white;
-}
 .container-cronometro{
     text-align: center;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+  }
+  #modal-msgGravada{
+    background-color: pink;
+    width: 60%;
+    max-width: 500px;
+    height: 500px;
+    max-height: 60%;
   }
   
   .timer {
@@ -509,7 +511,7 @@ aside img{
         width: 70%;
     }
     aside{
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
     #navheader{
         margin-right: 198px;

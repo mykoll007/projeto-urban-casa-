@@ -8,6 +8,8 @@
   <meta name="description" content="Urban Styles é um site marketplace 
     que vende roupas, acessórios e etc." />
 
+  <link rel="stylesheet" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="slick/slick.css"/>
   <!-- Link externo CSS-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="/css/estilo.css" />
@@ -41,7 +43,8 @@
     </div>
   </header>
   <main>
-    <hr />
+    <hr/>
+    
     <aside class="carrossel">
       <div id="img-carrossel" class="container-carrossel">
       <img src="/assets/Rectangle 117.jpg"/>
@@ -50,6 +53,7 @@
       <img src="assets/Rectangle 120.png" alt="Logo da página" />
       </div>
     </aside>
+ 
     <div class="titulos">
       <h2>Lançamentos</h2>
     </div>
@@ -277,8 +281,20 @@
     </div>
   </div>
 
+
+  <!--Modal de mensagem enviada para preenchimento de e-mail e whatsapp-->
+  <div id="modal-mensagem" style="display: none;">
+    <div id="modal-msgGravada">
+      <p>Informações gravadas com sucesso!</p>
+      <button>Fechar</button>
+    </div>
+  </div>
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="slick/slick.js"></script>
   <script src="/js/interaçoes.js"></script>
   <script src="js/script.js"></script>
+
+
 </body>
 
 </html>

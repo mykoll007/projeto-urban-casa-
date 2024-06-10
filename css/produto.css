@@ -3,7 +3,12 @@ body {
     background-color: #171718;
     color: white;
 }
-
+#logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+    margin-top: 14px;
+}
 .container-1 {
     max-width: 1200px;
     margin: 0 auto;

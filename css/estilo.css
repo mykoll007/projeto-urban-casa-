@@ -166,6 +166,13 @@ h1 img {
     background-color: #FF9900;
     color: black;
 }
+#btn-nike{
+    
+    cursor: pointer;
+}
+#btn-adidas{
+    cursor: pointer;
+}
 .card{
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +182,7 @@ h1 img {
 figure {
     margin: 2%; 
     padding-left: 2%;
-
+   
     border: 2px solid #FF9900;
     border-radius: 10px;
    
@@ -189,12 +196,15 @@ figure:hover {
 }
 
 figure img {
+    cursor: pointer;
     height: 300px;
     width: 200px;
     border-radius: 28px;
     padding-top: 10px;
 }
-
+.paragrafo{
+    display: inline;
+}
 .paragrafo p{
     font-size: large;
     width: 216px;
@@ -203,11 +213,23 @@ figure img {
     font-style: normal;
     color: white;
 }
-
+.preços{
+    color: white;
+    font-family: alata;
+    width: 201px;
+}
+.preços p{
+    margin: 0;
+}
+.preço-cifrão{
+    margin-left: 20px;
+}
+s{
+    margin-left: 50px;
+}
 #camiseta-melted p {
-
-    height: 67px;
-
+    height: 55px;
+    font-size: medium;
 }
 
 #container-ofertas {
@@ -291,12 +313,24 @@ figure img {
     display: flex;
     justify-content: center;
   }
-  #modal-msgGravada{
-    background-color: pink;
-    width: 60%;
-    max-width: 500px;
-    height: 500px;
-    max-height: 60%;
+  #modal-msgGravada {
+    background-color: black;
+    color: white;
+    max-width: 632px;
+    max-height: 169px;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    font-family: alata;
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+  #modal-msgGravada p{
+    margin-top: 40px;
+    margin-bottom: 31px;
   }
   
   .timer {
@@ -322,7 +356,15 @@ figure img {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
   }
-  
+  #modal-mensagem {
+    display: none;
+    position: fixed;
+    width: 90%;
+    height: 29%;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
   .modal-content {
     background-color: black;
     margin: 15% auto;
@@ -378,6 +420,20 @@ figure img {
     font-family: 'Alata';
   }
  
+#fechar-promoção{
+    font-weight: 500;
+    max-width: 159px;
+
+    z-index: 1;
+    height: 39px;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 50%;
+    background-color: #ff9900;
+    font-size: 16px;
+    font-family: 'Alata';
+    padding-bottom: 5px;
+}
 
 @media screen and (min-width:600px) {
     
@@ -588,3 +644,4 @@ figure img {
         flex-wrap: wrap;
     }
 }
+
